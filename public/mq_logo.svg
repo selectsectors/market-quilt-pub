@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="49.257812mm"
+   height="49.31641mm"
+   viewBox="0 0 49.257812 49.31641"
+   version="1.1"
+   id="svg5"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1888">
+      <stop
+         style="stop-color:#eab308;stop-opacity:1;"
+         offset="0"
+         id="stop1884" />
+      <stop
+         style="stop-color:#ec4899;stop-opacity:1;"
+         offset="0.48888889"
+         id="stop1896" />
+      <stop
+         style="stop-color:#3b82f6;stop-opacity:1;"
+         offset="1"
+         id="stop1886" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1888"
+       id="linearGradient1894"
+       x1="311.14047"
+       y1="225.30861"
+       x2="493.53314"
+       y2="405.01904"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.26458333,0,0,0.26458333,7.0967738,-11)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-89.072786,-48.656916)">
+    <path
+       style="fill:url(#linearGradient1894);fill-opacity:1;stroke:none;stroke-width:0.354838"
+       d="m 110.19009,97.736998 c -5.52487,-0.85432 -9.60572,-2.98577 -13.865196,-7.24186 -2.478008,-2.47605 -3.506147,-3.81468 -4.521287,-5.8867 -3.641982,-7.43372 -3.641083,-15.38405 0.0026,-22.68909 1.986079,-3.98183 6.696062,-8.62698 10.742213,-10.59435 4.13149,-2.00886 6.89316,-2.66808 11.17743,-2.66808 4.28426,0 7.04594,0.65922 11.17742,2.66808 4.09094,1.98915 8.78317,6.62875 10.74695,10.6264 2.07788,4.22991 2.85745,7.87195 2.64727,12.3677 -0.44364,9.48975 -5.49396,17.16774 -13.92649,21.17242 -4.4096,2.09415 -9.72078,2.93516 -14.18087,2.24548 z"
+       id="path568"
+       inkscape:export-filename="mq_logo.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>
