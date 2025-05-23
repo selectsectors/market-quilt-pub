@@ -877,11 +877,13 @@ export default function Home({ finalData, info, current }) {
               <a className="lg:hidden inline-flex text-2xl font-extralight ">
                 ${formatter.format(currentPrice)}
                 &nbsp;(
-                {(current.ticker.todaysChangePerc > 0 ? "+" : "") +
+                {current && current.ticker && current.ticker.todaysChangePerc !== undefined ? 
+                  (current.ticker.todaysChangePerc > 0 ? "+" : "") +
                   current.ticker.todaysChangePerc.toLocaleString("en-US", {
                     minimumFractionDigits: 2,
                     maximumFractionDigits: 2,
-                  })}
+                  })
+                  : "0.00"}
                 %)
               </a>
               <button
@@ -942,8 +944,10 @@ export default function Home({ finalData, info, current }) {
                 <a className="hidden lg:inline-flex text-4xl font-extralight items-center w-fit my-auto">
                   ${formatter.format(currentPrice)}
                   &nbsp;(
-                  {(current.ticker.todaysChangePerc > 0 ? "+" : "") +
-                    current.ticker.todaysChangePerc.toFixed(2)}
+                  {current && current.ticker && current.ticker.todaysChangePerc !== undefined ?
+                    (current.ticker.todaysChangePerc > 0 ? "+" : "") +
+                    current.ticker.todaysChangePerc.toFixed(2)
+                    : "0.00"}
                   %)
                 </a>
               </div>
