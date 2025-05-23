@@ -6,8 +6,11 @@
 
 This project uses environment variables for configuration. To set up your local environment:
 
-1. Copy the `.env.local` file from the repository root (or create one if it doesn't exist)
-2. Update the required environment variables
+1. Copy the `.env.example` file to `.env.local`:
+   ```
+   cp .env.example .env.local
+   ```
+2. Update the required environment variables in the `.env.local` file
 
 ### Algolia Search Configuration
 
