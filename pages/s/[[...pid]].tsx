@@ -915,28 +915,28 @@ export default function Home({ finalData, info, current }) {
             </div>
             <div className="lg:hidden relative text-white items-center mb-4 justify-start w-full px-6">
               <a className={"lg:hidden inline-flex text-3xl py-2 font-bold"}>
-                {truncateText(info.results.name)}
+                {info && info.results && info.results.name ? truncateText(info.results.name) : "Unknown"}
               </a>
 
-              {info.results.sic_description ? (
+              {info && info.results && info.results.sic_description ? (
                 <a className="lg:hidden flex ml-auto text-sm rounded-lg tracking-wide font-extralight ">
                   {info.results.sic_description.toTitleCase()}
                 </a>
-              ) : (
+              ) : info && info.results && info.results.type ? (
                 <a className="lg:hidden flex ml-auto text-sm rounded-lg font-medium tracking-wide font-extralight ">
                   {info.results.type}
                 </a>
-              )}
+              ) : null}
             </div>
 
             {/*Desktop*/}
             <div className="hidden lg:relative lg:inline-flex text-white pt-8 pb-4 justify-start items-center border-gray-500 w-full cursor-default">
               <div className={"hidden lg:inline-flex justify-center gap-x-4"}>
                 <a
-                  style={{ fontSize: fontSize(info.results.name.length) }}
+                  style={{ fontSize: fontSize(info && info.results && info.results.name ? info.results.name.length : 10) }}
                   className={`hidden lg:inline-flex  font-bold items-center text-left`}
                 >
-                  {truncateText(info.results.name)}
+                  {info && info.results && info.results.name ? truncateText(info.results.name) : "Unknown"}
                 </a>
                 <a className="hidden lg:inline-flex text-4xl font-extralight uppercase w-fit items-center my-auto">
                   {pid}
@@ -951,15 +951,15 @@ export default function Home({ finalData, info, current }) {
                   %)
                 </a>
               </div>
-              {info.results.sic_description ? (
+              {info && info.results && info.results.sic_description ? (
                 <a className="hidden lg:flex ml-auto py-3 px-5 bg-black bg-opacity-40 rounded-lg tracking-wide">
                   {info.results.sic_description.toTitleCase()}
                 </a>
-              ) : (
+              ) : info && info.results && info.results.type ? (
                 <a className="hidden lg:flex ml-auto py-3 px-5 bg-black bg-opacity-40 rounded-lg font-medium tracking-wide ">
                   {info.results.type}
                 </a>
-              )}
+              ) : null}
               <button
                 className="hidden lg:block active:scale-95 transform duration-75 transition-all ease-in bg-black bg-opacity-40 ml-3 p-3 rounded-lg
                             hover:bg-opacity-30 -mr-1"
