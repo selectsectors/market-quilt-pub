@@ -104,7 +104,11 @@ export default function Home({ finalData, info, current }) {
     if (typeof window !== "undefined") {
       setLoading(false);
     }
-    if (info !== "undefined") {
+    
+    console.log("Info:", info);
+    console.log("Current Object:", current);
+    
+    if (info !== undefined && info !== null) {
       // setImage('https://logo.clearbit.com/'+info.results.homepage_url);
       // try {
       //   setImage('https://api.kickfire.com/logo?website=' + info.results.homepage_url.slice(8));
@@ -114,7 +118,12 @@ export default function Home({ finalData, info, current }) {
       // setCurrentPrice((current.ticker.lastQuote.P+current.ticker.lastQuote.p)/2)
 
       // setCurrentPrice(current.ticker.lastTrade.p); // Needs Live Subscription
-      setCurrentPrice(current.ticker.day.l);
+      if (current && current.ticker && current.ticker.day && current.ticker.day.l) {
+        setCurrentPrice(current.ticker.day.l);
+      } else {
+        console.error("current.ticker.day.l is undefined");
+        setCurrentPrice(0); // Use a default value
+      }
     }
     // const handleScroll = () => {
     //   setScrollY(window.scrollY);
